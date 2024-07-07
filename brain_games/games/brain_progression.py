@@ -6,7 +6,7 @@ MAX_ROUNDS = 3
 def generate_progression():
     start = random.randint(1, 10)
     step = random.randint(1, 10)
-    length = random.randint(5, 10)
+    length = 10
     progression = [start + step * i for i in range(length)]
 
     missing_index = random.randint(0, length - 1)
