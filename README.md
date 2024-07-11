@@ -4,10 +4,10 @@
 ---
 # The Brain-Games Project
 This project was made as an intertainment for everyone who loves development and needs something to have rest from work and just relax.
-By the rules of all games you should give three right answers in a row, in other case you'll lose a game.
+According to the rules of all games you should give three right answers in a row, in other case you'll lose a game.
 ---
 # Games discription:
----
+
 ## 1. Brain eval
 Here you should answer if number is eval or odd, use "yes" or "no" to reply.
 Start the game with "brain-even" command.
