@@ -1,49 +1,20 @@
-import random
+from random import randint
+from brain_games.games.game_engine import run_game
 
-MAX_ROUNDS = 3
+DESCRIPTION = 'What number is missing in the progression?'
 
 
-def generate_progression():
-    start = random.randint(1, 10)
-    step = random.randint(1, 10)
+def generate_question_and_answer():
+    start = randint(1, 10)
+    step = randint(1, 10)
     length = 10
-    progression = [start + step * i for i in range(length)]
-
-    missing_index = random.randint(0, length - 1)
-    missing_number = progression[missing_index]
+    progression = [start + i * step for i in range(length)]
+    missing_index = randint(0, length - 1)
+    answer = progression[missing_index]
     progression[missing_index] = '..'
-
     question = ' '.join(map(str, progression))
-    return question, missing_number
+    return question, answer
 
 
 def main():
-    print("Welcome to the Brain Games!")
-    name = input("May I have your name? ")
-    print(f"Hello, {name}!")
-    print("What number is missing in the progression?")
-
-    correct_answers = 0
-
-    while correct_answers < MAX_ROUNDS:
-        question, correct_answer = generate_progression()
-        print(f"Question: {question}")
-
-        try:
-            user_answer = int(input("Your answer: "))
-        except ValueError:
-            print(f"Please enter a valid number. Let's try again, {name}!")
-            continue
-
-        if user_answer == correct_answer:
-            print("Correct!")
-            correct_answers += 1
-        else:
-            print(
-                f"'{user_answer}' is wrong answer ;(."
-                f" Correct answer was '{correct_answer}'."
-            )
-            print(f"Let's try again, {name}!")
-            return
-
-    print(f"Congratulations, {name}!")
+    run_game(DESCRIPTION, generate_question_and_answer)
