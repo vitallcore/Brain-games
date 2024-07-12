@@ -2,19 +2,18 @@ import random
 import operator
 
 MAX_ROUNDS = 3
+OPERATIONS = {
+    '+': operator.add,
+    '-': operator.sub,
+    '*': operator.mul,
+}
 
 
 def generate_question():
-    operations = {
-        '+': operator.add,
-        '-': operator.sub,
-        '*': operator.mul,
-    }
-
     num1 = random.randint(1, 100)
     num2 = random.randint(num1, 100)
-    op_symbol = random.choice(list(operations.keys()))
-    op_function = operations[op_symbol]
+    op_symbol = random.choice(list(OPERATIONS.keys()))
+    op_function = OPERATIONS[op_symbol]
 
     question = f"{num2} {op_symbol} {num1}"
     answer = op_function(num2, num1)
