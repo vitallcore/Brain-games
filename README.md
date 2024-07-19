@@ -20,44 +20,43 @@ Here you'll be given a randomly matched numbers and operators to calculate it.
 Start the game with "brain-calc" command.
 The game's asciinema:
 
-[![asciicast](https://asciinema.org/a/G9xwyuY2qyvMkHoU5vWmshz2h.svg)](https://asciinema.org/a/G9xwyuY2qyvMkHoU5vWmshz2h)
+[![asciicast](https://asciinema.org/a/668818.svg)](https://asciinema.org/a/668818)
 ---
 ## 3. Brain GCD
 Here you'll be given two random numbers, you should calculate and enter the greatest common divisor of these two numbers.
 Start the game with "brain-gcd" command.
 The game's asciinema:
 
-[![asciicast](https://asciinema.org/a/rFHzU1WH61fPKMtio7SrRkzmn.svg)](https://asciinema.org/a/rFHzU1WH61fPKMtio7SrRkzmn)
+[![asciicast](https://asciinema.org/a/668819.svg)](https://asciinema.org/a/668819)
 ---
 ## 4. Brain Progression
 Here you'll be given a randomly matched progression with one number missing, your purpose to find this number.
 Start the game with "brain-progression" command.
 The game's asciinema:
 
-[![asciicast](https://asciinema.org/a/onehZTTq6JymgQxI3073n9zM2.svg)](https://asciinema.org/a/onehZTTq6JymgQxI3073n9zM2)
+[![asciicast](https://asciinema.org/a/668820.svg)](https://asciinema.org/a/668820)
 ---
 ## 5. Brain Prime
 Here you should answer if the number is prime or not, use "yes" or "no" to reply.
 Start the game with "brain-prime" command.
 The game's asciinema:
 
-[![asciicast](https://asciinema.org/a/kmnnNIYOiI6Z3ifUWQNOwODFm.svg)](https://asciinema.org/a/kmnnNIYOiI6Z3ifUWQNOwODFm)
+[![asciicast](https://asciinema.org/a/668821.svg)](https://asciinema.org/a/668821)
 ---
 ### Installation requirements and instruction.
 
 Installation requirements:
-1. Unix-based system.
-2. Python 3.
-3. Pip.
-4. Poetry.
+1. CPython.
+2. Poetry.
+3. Git.
+4. Make.
 
 How to install the Brain Games:
 1. Clone this project repo(git clone "url of the project").
-2. Activate your venv(source myenv/bin/activate).
-3. Cd to the cloned project.
-4. Use command "make package-install" to install the package.
-5. Use command "make install" to install all dependencies.
-6. Use any of game commands given above to start a game.
+2. Cd to the cloned project.
+3. Use command "make build" to build the package.
+4. Install the built package using pip.
+5. Use any of game commands given above to start a game.
 
 Important note;
 If you want to check the project's code you always can use "make lint" command to use a linter built in a project.
