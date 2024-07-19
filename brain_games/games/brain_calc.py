@@ -1,7 +1,4 @@
 from random import randint, choice
-from brain_games.games.game_engine import run_game
-
-DESCRIPTION = 'What is the result of the expression?'
 
 
 def generate_question_and_answer():
@@ -16,7 +13,3 @@ def generate_question_and_answer():
         answer = num2 * num1
     question = f'{num2} {operation} {num1}'
     return question, answer
-
-
-def main():
-    run_game(DESCRIPTION, generate_question_and_answer)
