@@ -8,12 +8,12 @@ According to the rules of all games you should give three right answers in a row
 ---
 # Games discription:
 
-## 1. Brain eval
+## 1. Brain even
 Here you should answer if number is eval or odd, use "yes" or "no" to reply.
 Start the game with "brain-even" command.
 The game's asciinema:
 
-[![asciicast](https://asciinema.org/a/pfThaTi675VD7fVfb6IPG9g0H.svg)](https://asciinema.org/a/pfThaTi675VD7fVfb6IPG9g0H)
+[![asciicast](https://asciinema.org/a/668817.svg)](https://asciinema.org/a/668817)
 ---
 ## 2. Brain calc
 Here you'll be given a randomly matched numbers and operators to calculate it.
